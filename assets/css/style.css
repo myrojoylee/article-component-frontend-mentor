@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+:root {
+  --clr--font-dark: hsl(217, 19%, 35%);
+  --clr--font-light: hsl(214, 17%, 51%);
+  --clr--font-medium: hsl(212, 23%, 69%);
+  --clr--bg-light: hsl(210, 46%, 95%);
+
+  --ff--body: "Manrope", sans-serif;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+
+  background-color: var(--clr--bg-light);
+  font-family: var(--ff--body);
+  min-width: 377px;
+  height: 100vh;
+  padding: 1.5em;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 1.5fr 1.75fr 0.5fr;
+  width: 100%;
+  border-radius: 0.75em;
+  overflow: hidden;
+}
+
+header {
+  display: grid;
+  background-image: url(../images/drawers.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: grid;
+  gap: 1em;
+  background-color: white;
+  padding: 2em;
+  line-height: 1.45em;
+}
+
+h1 {
+  color: var(--clr--font-dark);
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.content {
+  color: var(--clr--font-light);
+  font-size: 0.9em;
+}
+
+footer {
+  display: grid;
+  background-color: var(--clr--font-dark);
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  display: none;
+  position: relative;
+}
+
+.icons {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+  background-color: var(--clr--font-dark);
+  color: var(--clr--font-light);
+  text-transform: uppercase;
+}
+
+.share {
+  letter-spacing: 0.5em;
+  justify-self: end;
+}
+
+.fa-brands {
+  color: hsl(210, 46%, 95%);
+  font-size: 2em;
+}
+
+.fa-solid {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--clr--font-light);
+  justify-self: center;
+  align-self: center;
+  color: white;
+}
+
+.fa-brands,
+.fa-solid,
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.attribution a {
+  font-size: 0.75em;
+}
